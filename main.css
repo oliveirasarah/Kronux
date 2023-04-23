@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+:root {
+  --primary: hsl(251, 100%, 70%);
+  --primary-dark: hsl(251, 100%, 80%);
+  --light: #fbf8ff;
+  --dark: #494454;
+  --grey: hsla(0, 0%, 0%, 0.1);
+}
+
+/* Colors */
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  user-select: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.page-title {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer {
+  user-select: none;
+  display: flex;
+  column-gap: 1rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+}
+
+.unit {
+  align-self: center;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: var(--primary);
+  padding: 1em 2em;
+  border-radius: 3px;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  color: var(--light);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.inverted-colors {
+  background-color: inherit;
+  color: var(--primary);
+}
